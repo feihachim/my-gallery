@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+header {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+header img {
+  width: 25%;
+  height: auto;
+  border-radius: 16px;
+}
+
+ul {
+  display: flex;
+  column-gap: 20px;
+}
+
+li {
+  background-color: #e5e5e5;
+  border-radius: 12px;
+  list-style-type: none;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  max-width: 80%;
+  aspect-ratio: 1/1;
+  display: grid;
+  grid-template-areas:
+    "photo1 photo2 photo2"
+    "photo3 photo3 photo6"
+    "photo4 photo5 photo6";
+  gap: 15px 15px;
+}
+
+.living-room {
+  grid-area: photo1;
+}
+
+.living-room2 {
+  grid-area: photo2;
+}
+
+.bathroom {
+  grid-area: photo3;
+}
+
+.decoration {
+  grid-area: photo4;
+}
+
+.plant {
+  grid-area: photo5;
+}
+
+.lamp {
+  grid-area: photo6;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+footer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #4e5150;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #4e5150;
+}
+
+p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.attribution {
+  font-weight: 500;
+  font-size: 14px;
+  color: #b9bdcf;
+}
+
+span {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #b9bdcf;
+}
+
+a:hover {
+  color: #4e5150;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  header {
+    width: 90%;
+  }
+  header img {
+    width: 50%;
+  }
+
+  ul {
+    column-gap: 5px;
+  }
+  li {
+    padding: 10px;
+  }
+  main {
+    width: 100%;
+    max-width: 100%;
+    gap: 5px 5px;
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
